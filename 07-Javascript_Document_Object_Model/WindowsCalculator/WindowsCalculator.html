@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title> Calcolatrice</title>
+    <meta charset="UTF-8">
+</head>
+<body onload="initializeCalculator()">
+    <div id="window">
+        <div id="display_container">
+            <span id="display"></span>
+        </div>
+        <form>
+            <div>
+                <input type="radio" id="hexRadioButton" value="HEX" name="radix" onclick="radioButtonPressed()" checked>
+                <label for="hexRadioButton"> HEX </label>
+                <span id="hexDisplay"></span></br>
+
+                <input type="radio" id="decRadioButton" value="DEC" name="radix" onclick="radioButtonPressed('DEC')">
+                <label for="decRadioButton"> DEC </label>
+                <span id="decDisplay"></span></br>
+
+                <input type="radio" id="octRadioButton" value="OCT" name="radix" onclick="radioButtonPressed('OCT')">
+                <label for="octRadioButton"> OCT </label>
+                <span id="octDisplay"></span></br>
+
+                <input type="radio" id="binRadioButton" value="BIN" name="radix" onclick="radioButtonPressed('BIN')">
+                <label for="binRadioButton"> BIN </label>
+                <span id="binDisplay"></span></br>
+            </div>
+        </form>
+        <form>
+            <div>
+                <input type="button" id="buttonD" name="button" value="D" onclick="numButtonPressed('D')">
+                <input type="button" id="buttonE" name="button" value="E" onclick="numButtonPressed('E')">
+                <input type="button" id="buttonF" name="button" value="F" onclick="numButtonPressed('F')">
+                <input type="button" id="delete" name="button" value="DEL" onclick="operandButtonPressed('DEL')">
+            </div>
+            <div>
+                <input type="button" id="buttonA" name="button" value="A" onclick="numButtonPressed('A')">
+                <input type="button" id="buttonB" name="button" value="B" onclick="numButtonPressed('B')">
+                <input type="button" id="buttonC" name="button" value="C" onclick="numButtonPressed('C')">
+                <input type="button" id="buttonMUL" name="button" value="*" onclick="operandButtonPressed('MUL')">
+            </div>
+            <div>
+                <input type="button" id="button7" name="button" value="7" onclick="numButtonPressed('7')">
+                <input type="button" id="button8" name="button" value="8" onclick="numButtonPressed('8')">
+                <input type="button" id="button9" name="button" value="9" onclick="numButtonPressed('9')">
+                <input type="button" id="buttonDIV" name="button" value="/" onclick="operandButtonPressed('DIV')">
+            </div>
+            <div>
+                <input type="button" id="button4" name="button" value="4" onclick="numButtonPressed('4')">
+                <input type="button" id="button5" name="button" value="5" onclick="numButtonPressed('5')">
+                <input type="button" id="button6" name="button" value="6" onclick="numButtonPressed('6')">
+                <input type="button" id="buttonADD" name="button" value="+" onclick="operandButtonPressed('ADD')">
+            </div>
+            <div>
+                <input type="button" id="button1" name="button" value="1" onclick="numButtonPressed('1')">
+                <input type="button" id="button2" name="button" value="2" onclick="numButtonPressed('2')">
+                <input type="button" id="button3" name="button" value="3" onclick="numButtonPressed('3')">
+                <input type="button" id="buttonSUB" name="button" value="-" onclick="operandButtonPressed('SUB')">
+            </div>
+
+            <div>
+                <input type ="button" name="button">
+                <input type="button" id="button0" name="button" value="0" onclick="numButtonPressed('0')">
+                <input type ="button" name="button">
+                <input type ="button" id="buttonCOMPUTE" name="button" value="=" onclick="computeButtonPressed()">
+            </div>
+        </form>
+    </div>
+<script src="WindowsCalculator.js"></script>
+</body>
+</html>
