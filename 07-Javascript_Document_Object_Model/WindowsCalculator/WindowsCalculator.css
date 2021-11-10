@@ -1,0 +1,73 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    font-family: sans-serif;
+    font-weight: 600 !important;
+}
+
+#window {
+    width: 320px;
+    height: 470px;
+    padding: 0;
+    margin: 0 auto;
+    border: 1px solid #616c63;
+    color: white;
+}
+
+#display_container {
+    width: inherit;
+    background-color: #303030;
+    text-align: right;
+    font-size: 24px !important;
+}
+
+.inputRadix{
+    background-color: #303030;
+
+}
+.radix:active {
+    background-color: #000;
+}
+.radix:hover, .number:hover{
+    transition: 0.2s all linear;
+    background-color: #000;
+}
+.radio {
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+}
+.number {
+    height: 61px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+.button {
+    height: inherit;
+    width: 76px;
+    margin: 0;
+    font-size: 34px !important;
+    text-align: center;
+
+    color: white;
+    background-color: black;
+    outline: 1px solid gray;
+}
+
+.button:disabled {
+    background-color: #303030;
+}
